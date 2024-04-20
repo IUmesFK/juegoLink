@@ -19,6 +19,12 @@ void draw(){
   goht.dibujar();
   goht.mover();
   cofre.dibujar();
+  // efecto de lluvia
+  stroke(255);
+  float x = random(width);
+  float y = random(height);
+  line(x, y, x, y + 5);
+  line(x, y, x, y + 10);
 }
 
 public void keyPressed(){
