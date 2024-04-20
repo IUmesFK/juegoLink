@@ -1,5 +1,6 @@
 personaje link;
 enemigo goht;
+tesoro cofre;
 PImage fondo;
 color tinte = color(86, 124, 243);
 
@@ -8,6 +9,7 @@ void setup(){
   fondo = loadImage("fondo2.jpg");
   goht = new enemigo();
   link = new personaje();
+  cofre = new tesoro(); 
 }
 
 void draw(){
@@ -15,6 +17,8 @@ void draw(){
   image(fondo,0,0, width, height);
   link.dibujar();  
   goht.dibujar();
+  goht.mover();
+  cofre.dibujar();
 }
 
 public void keyPressed(){

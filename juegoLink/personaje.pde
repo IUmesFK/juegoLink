@@ -6,7 +6,7 @@ class personaje{
   //constructor
   public personaje(){
     personaje = loadImage("link.png");
-    posicion = new PVector(mouseX, mouseY);
+    posicion = new PVector(10, 370);
     velocidad = new PVector(10,10);
   }
   
